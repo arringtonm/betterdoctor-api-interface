@@ -2,5 +2,39 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+#lookup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin-top: 10px;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #F4F4F4;
+  border: 1px solid #420; }
+
+#result {
+  padding: 50px, 100px;
+  margin-top: 10px;
+  width: 1000px;
+  background-color: rgba(14,122,254,0.5);
+  min-height: 100px;
+  border-radius: 5px;
+  border: 1px solid #420; }
+
+input[type=text],button {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #420; }
