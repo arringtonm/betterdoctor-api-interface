@@ -8,8 +8,14 @@
   </head>
   <body>
     <form id="lookup">
-      <input type="text">
-      <button type="submit">Submit</button>
+      <div class="search-group">
+        <input type="text" id="searchquery">
+        <select id="searchby">
+          <option value="query">Keyword (e.g. 'cough' or 'botox')</option>
+          <option value="name">Doctor's name</option>
+        </select>
+      </div>
+      <button type="submit" id="submit">Submit</button>
     </form>
     <div id="result">
     </div>
