@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: sans-serif;
@@ -11,9 +12,26 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #eff6ff;
   // background-image: url("../img/polkadots.png");
   // background-repeat: repeat-x;
   // background-size: contain;
+}
+
+
+input[type=text],button,select {
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #420;
+  box-shadow: 2px 2px 1px #DDD;
+ }
+
+.search-group { }
+
+#submit {
+  background-color: #68abff;
 }
 
 #lookup,#result {
@@ -22,31 +40,50 @@ body {
   padding: 50px;
   border-radius: 5px;
   border: 1px solid #420;
-  box-shadow: 2px 2px 1px #DDD; }
+  box-shadow: 2px 2px 1px #DDD;
+}
 
 #lookup {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F4F4F4; }
+  background-color: #F4F4F4;
+}
 
 #result {
   padding: 50px, 100px;
-  background-color: rgba(14,122,254,0.5);
-  min-height: 100px; }
+  background-color: #68abff;
+  min-height: 100px;
+}
 
-input[type=text],button,select {
-  height: 30px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
+#searchquery {
+  width: 250px;
+}
+
+.provider-card {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
   border: 1px solid #420;
-box-shadow: 2px 2px 1px #DDD;
- }
+}
 
-.search-group { }
+.provider-info {
 
-#submit {
-  background-color: rgba(255,0,0,0.5);
- }
+}
+
+.provider-name {
+  font-weight: 800;
+}
+
+.provider-bio {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.provider-headshot {
+  border: 1px solid #420;
+  border-radius: 5px;
+  margin-right: 10px;
+}

@@ -9,7 +9,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #eff6ff; }
+
+input[type=text], button, select {
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #420;
+  box-shadow: 2px 2px 1px #DDD; }
+
+#submit {
+  background-color: #68abff; }
 
 #lookup, #result {
   width: 1000px;
@@ -28,18 +40,29 @@ body {
 
 #result {
   padding: 50px, 100px;
-  background-color: rgba(14, 122, 254, 0.5);
+  background-color: #68abff;
   min-height: 100px; }
 
-input[type=text], button, select {
-  height: 30px;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid #420;
-  box-shadow: 2px 2px 1px #DDD; }
+#searchquery {
+  width: 250px; }
 
-#submit {
-  background-color: rgba(255, 0, 0, 0.5); }
+.provider-card {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  border: 1px solid #420; }
+
+.provider-name {
+  font-weight: 800; }
+
+.provider-bio {
+  font-size: 10px;
+  font-style: italic; }
+
+.provider-headshot {
+  border: 1px solid #420;
+  border-radius: 5px;
+  margin-right: 10px; }
 
 /*# sourceMappingURL=master.css.map */
