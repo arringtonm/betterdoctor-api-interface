@@ -1,6 +1,10 @@
 # Better Doctor API lookup
+## API Lookup Project for Epicodus by Michael Arrington
 
-### API Lookup Project for Epicodus by Michael Arrington
+### Description
+
+This web application is an API interface for the Better Doctor API that allows the user to search for physicians based on the provider's name or a keyword (that may be an ailment, a type of treatment, or anything else).
+
 
 ### Installation Instructions
 
