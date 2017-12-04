@@ -4,16 +4,26 @@
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <link rel="stylesheet" href="css/master.css">
-    <title>Michael Arrington's Better Doctor API Lookup</title>
+    <title>Better Doctor API Lookup</title>
   </head>
   <body>
     <form id="lookup">
+      <h1>Better Doctor API Lookup</h1>
       <div class="search-group">
-        <input type="text" id="searchquery">
+        <!-- <label for="searchquery">Search query</label><br> -->
+        <input type="text" id="searchquery" placeholder="Search query"><br>
+        <!-- <label for="searchby">Search type</label> -->
         <select id="searchby">
           <option value="query">Keyword (e.g. 'cough' or 'botox')</option>
-          <option value="name">Doctor's name</option>
+          <option value="name">Provider name</option>
         </select>
+        <!-- <label for="searchnum">Results</label> -->
+        <select id="searchnum">
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select><br>
         <button type="submit" id="submit">Submit</button>
       </div>
     </form>

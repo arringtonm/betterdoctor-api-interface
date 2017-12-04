@@ -12,16 +12,36 @@ body {
   flex-direction: column;
   background-color: #b4d6ff; }
 
+h1 {
+  color: #420;
+  margin-bottom: 30px; }
+
+label {
+  font-weight: 300;
+  margin-left: 10px;
+  font-size: 12px;
+  transform: translateY(100px); }
+
 input[type=text], button, select {
   height: 30px;
   padding: 5px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 4px;
+  border: 1px solid #CCC; }
+
+select {
   border: 1px solid #CCC;
-  box-shadow: 2px 2px 5px #DDD; }
+  height: 30px;
+  border-radius: 5px;
+  transform: translateY(-0.5px); }
 
 #submit {
-  background-color: #b5d6ff; }
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #b5d6ff;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 300; }
   #submit:hover {
     background-color: #68abff;
     cursor: pointer; }
@@ -42,11 +62,13 @@ input[type=text], button, select {
   flex-direction: column; }
 
 #result {
+  font-size: 12px;
+  display: none;
   padding: 50px, 100px;
   min-height: 100px; }
 
 #searchquery {
-  width: 250px; }
+  width: 244px; }
 
 .searching {
   color: #CCC;
