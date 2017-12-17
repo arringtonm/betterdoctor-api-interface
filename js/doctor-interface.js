@@ -1,9 +1,8 @@
 import { apiKey } from "./../.env";
 import { DoctorModule } from './../js/doctor.js';
 
-
 var displayResults = function(response) {
-  console.log("hi");
+  console.log("display results worked!");
   if (response.data.length === 0) {
     $("#result").append("<p>No providers found. Please try refining your search");
   } else {
@@ -22,13 +21,11 @@ var displayResults = function(response) {
     } else {
       url = `<a href="${url}">Website</a>`;
     }
-
     if (title === undefined) {
       title = "";
     } else {
       title = `, ${title}`;
     }
-
     if (patients === true) {
       patients = "Accepts new patients";
     } else {
@@ -41,9 +38,7 @@ var displayResults = function(response) {
 };
 
 $(document).ready(function() {
-
   var docSearch = new DoctorModule();
-
   $("#lookup").submit(function(event){
     event.preventDefault();
     $("#result").text("");
@@ -55,14 +50,11 @@ $(document).ready(function() {
       $("#result").append(`Please enter a search term`);
       return;
     }
+
     let location = "or-portland";
     let searchString = `${searchBy}=${searchQuery}&location=${location}&skip=0&limit=${limit}&user_key=${apiKey}`;
 
-    docSearch.getDoctor(searchString);
-
-
+    docSearch.getDoctor(searchString,displayResults);
     $("#result").append(`<span class="searching">Searching for providers by <span class="searching-bold">${searchQuery}</span>...</span><br><br>`);
-
-
   });
 });
